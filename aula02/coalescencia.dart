@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   // Dados recebidos (alguns podem ser nulos)
-  String? nomeRecebido;
+  String? nomeRecebido = 'João da Silva';
   String? emailRecebido = 'usuario@email.com';
   String? telefoneRecebido;
 
