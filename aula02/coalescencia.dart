@@ -1,4 +1,4 @@
-import 'dart:io';
+//import 'dart:io';
 
 void main() {
   // Dados recebidos (alguns podem ser nulos)
