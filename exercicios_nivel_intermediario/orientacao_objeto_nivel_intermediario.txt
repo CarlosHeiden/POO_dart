@@ -45,6 +45,26 @@ Crie as classes `Livro`, `Usuario` e `Emprestimo`. Utilize composição para rep
 8. Classe Pessoa com Encapsulamento
 Implemente a classe `Pessoa` com nome e idade. Garanta que a idade não possa ser menor que zero, utilizando `set` com validação.
 
+class Pessoa {
+	String nome,
+	int _idade = 0;
+	Pessoa (this.nome, idade){
+		this.idade = idade;
+	}
+	set idade(int valor){
+		if(valor <0){
+			throw ArgumentError('Idade não pode ser negativa');
+		}
+		_idade = valor
+	}
+	int get idade => _idade;
+	@override
+  	String toString() {
+    	return 'Pessoa: $nome, Idade: $idade';
+ 	}	
+	}
+
+
 9. Interface Imprimivel
 Crie uma interface `Imprimivel` com um método `imprimir()`. Faça com que as classes `Documento` e `Relatorio` implementem essa interface com comportamentos diferentes.
 
