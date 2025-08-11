@@ -74,5 +74,41 @@ Crie uma classe abstrata `Pagamento` com o método `processarPagamento()`. Imple
 11. Classe Carrinho de Compras
 Crie uma classe `Carrinho` que armazene uma lista de `Produto`. Implemente métodos para adicionar, remover e listar produtos, além de calcular o total do carrinho.
 
+class Produto{
+	string nome,
+	double preco;
+	Produto(this.nome, this.preco);
+
+	@override
+	String toString(){
+		return 'Produto: $nome, preco: $preco';
+}
+
+}
+
+
+
 12. Conversão para String
 Crie uma classe `Pessoa` com `nome` e `idade`. Sobrescreva o método `toString()` para retornar uma representação textual da instância.
+
+
+class Pessoa{
+	String nome,
+	int idade;
+	Pessoa(this.nome, this.idade);
+
+	@override
+	String toString(){
+		return 'Pessoa: $nome, idade: $idade';
+	}
+}
+
+void main(){
+	Pessoa pessoa1 = ('Joáo', 23);
+	Pessoa pessoa2 = ('Ana', 28);
+
+print(pessoa1);
+print(pessoa);
+}
+
+

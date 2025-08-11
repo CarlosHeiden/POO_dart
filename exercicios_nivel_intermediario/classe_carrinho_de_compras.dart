@@ -47,9 +47,18 @@ class Carrinho {
   }
 
   double calcularTotal() {
-    double total = produtos.fold(0, (sum, produto) => sum + produto.preco);
-    return total;
+    
+  double total = 0.0; // Inicializa a variável 'total' com 0.
+
+  // Percorre cada 'produto' na lista de 'produtos'.
+  for (var produto in produtos) {
+    // Adiciona o preço do produto atual ao 'total'.
+    total += produto.preco;
   }
+  
+  // Retorna o valor final de 'total' após o loop.
+  return total;
+}
 }
 
 void main() {
@@ -66,12 +75,16 @@ void main() {
   carrinho.listarProdutos();
 
   print('Total do carrinho: R\$ ${carrinho.calcularTotal()}');
+  print('='*40);
 
   carrinho.removerProduto(produto2);
   carrinho.listarProdutos();
 
   print('Total do carrinho após remoção: R\$ ${carrinho.calcularTotal()}');
-
+  print('='*40);
   carrinho.limparCarrinho();
   carrinho.listarProdutos();
+  print('Total do carrinho após limpeza: R\$ ${carrinho.calcularTotal()}');
+  print('='*40);
+  print('Fim do programa.');
 }
