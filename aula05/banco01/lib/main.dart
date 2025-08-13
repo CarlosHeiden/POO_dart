@@ -17,7 +17,7 @@ void main() async {
     // Se quiser, você pode comentar as linhas que não quer executar.
 
     // Incluir um livro
-    //await incluirLivro(conn, 'O Senhor dos Anéis', 'J.R.R. Tolkien', 1954);
+    await incluirLivro(conn, 'O Senhor da Guerra', 'J.R.R. Hoden', 1945);
 
     // Listar todos os livros
     //await listarLivros(conn);
